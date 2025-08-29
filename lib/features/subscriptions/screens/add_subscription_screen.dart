@@ -88,7 +88,7 @@ class _AddSubscriptionScreenState extends State<AddSubscriptionScreen> {
     try {
       final subscription = SubscriptionModel(
         id: DateTime.now().millisecondsSinceEpoch.toString(),
-        userId: context.read<auth.AuthProvider>().currentUser?.uid ?? 'anonymous',
+        userId: context.read<auth.AuthProvider>().user?.uid ?? 'anonymous',
         name: _nameController.text.trim(),
         category: _selectedPlatform?.category ?? 'Other',
         cost: double.parse(_costController.text),
