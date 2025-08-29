@@ -172,7 +172,7 @@ class SubscriptionTile extends StatelessWidget {
                         Row(
                           children: [
                             Text(
-                              CurrencyFormatter.format(subscription.cost),
+                              CurrencyFormatter.formatIndianCurrency(subscription.cost),
                               style: Theme.of(context).textTheme.titleSmall?.copyWith(
                                 fontWeight: FontWeight.bold,
                                 color: Theme.of(context).primaryColor,

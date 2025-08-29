@@ -361,7 +361,7 @@ class _SubscriptionsScreenState extends State<SubscriptionsScreen>
                             const Text('Monthly Spend'),
                             const SizedBox(height: 8),
                             Text(
-                              CurrencyFormatter.format(monthlySpend),
+                              CurrencyFormatter.formatIndianCurrency(monthlySpend),
                               style: const TextStyle(
                                 fontSize: 20,
                                 fontWeight: FontWeight.bold,
@@ -382,7 +382,7 @@ class _SubscriptionsScreenState extends State<SubscriptionsScreen>
                             const Text('Yearly Spend'),
                             const SizedBox(height: 8),
                             Text(
-                              CurrencyFormatter.format(yearlySpend),
+                              CurrencyFormatter.formatIndianCurrency(yearlySpend),
                               style: const TextStyle(
                                 fontSize: 20,
                                 fontWeight: FontWeight.bold,
@@ -426,7 +426,7 @@ class _SubscriptionsScreenState extends State<SubscriptionsScreen>
                           ),
                         ),
                         Text(
-                          CurrencyFormatter.format(entry.value),
+                          CurrencyFormatter.formatIndianCurrency(entry.value),
                           style: const TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 16,
@@ -510,7 +510,7 @@ class _SubscriptionsScreenState extends State<SubscriptionsScreen>
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      CurrencyFormatter.format(provider.getTotalMonthlySpending()),
+                      CurrencyFormatter.formatIndianCurrency(provider.getTotalMonthlySpending()),
                       style: const TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
