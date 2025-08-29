@@ -1,0 +1,117 @@
+{
+  "app_name": "SubTracker Pro India",
+  "tagline": "भारतीय उपयोगकर्ताओं के लिए सब्स्क्रिप्शन ट्रैकर",
+  
+  "auth": {
+    "welcome": "स्वागत है",
+    "enter_phone": "अपना मोबाइल नंबर दर्ज करें",
+    "we_will_send_otp": "हम आपको OTP भेजेंगे",
+    "send_otp": "OTP भेजें",
+    "verify_otp": "OTP सत्यापित करें",
+    "resend_otp": "OTP पुनः भेजें",
+    "login_with_email": "ईमेल से लॉगिन करें",
+    "continue_as_guest": "गेस्ट के रूप में जारी रखें",
+    "continue_with_google": "Google के साथ जारी रखें",
+    "enter_otp": "OTP दर्ज करें",
+    "otp_sent_to": "हमने {} पर OTP भेजा है",
+    "didnt_receive_otp": "OTP नहीं मिला?",
+    "change_phone_number": "फोन नंबर बदलें",
+    "otp_auto_fill": "OTP अपने आप भर जाएगा",
+    "login": "लॉगिन",
+    "signup": "साइन अप",
+    "create_account": "खाता बनाएं",
+    "name": "नाम",
+    "email": "ईमेल",
+    "phone_number": "फोन नंबर",
+    "password": "पासवर्ड",
+    "forgot_password": "पासवर्ड भूल गए?",
+    "reset_password": "पासवर्ड रीसेट",
+    "send": "भेजें",
+    "cancel": "रद्द करें",
+    "agree_to_terms": "मैं नियम और शर्तें और प्राइवेसी पॉलिसी से सहमत हूं"
+  },
+  
+  "dashboard": {
+    "dashboard": "डैशबोर्ड",
+    "good_morning": "सुप्रभात",
+    "good_afternoon": "नमस्कार",
+    "good_evening": "शुभ संध्या",
+    "guest_user": "गेस्ट यूजर",
+    "user": "उपयोगकर्ता",
+    "welcome_message": "SubTracker Pro India में आपका स्वागत है!",
+    "total_subscriptions": "कुल सब्स्क्रिप्शन",
+    "monthly_spending": "मासिक खर्च",
+    "add_subscription": "सब्स्क्रिप्शन जोड़ें",
+    "explore_indian_ott": "भारतीय OTT प्लेटफॉर्म",
+    "create_account_secure": "अपनी जानकारी सुरक्षित रखने के लिए खाता बनाएं"
+  },
+  
+  "settings": {
+    "choose_language": "भाषा चुनें",
+    "account_menu": "खाता मेनू",
+    "profile": "प्रोफाइल",
+    "settings": "सेटिंग्स",
+    "sign_out": "लॉग आउट"
+  },
+  
+  "messages": {
+    "coming_soon": "यह फीचर जल्द ही आ रहा है!",
+    "account_created": "खाता सफलतापूर्वक बनाया गया!",
+    "login_successful": "सफलतापूर्वक लॉगिन हुए",
+    "signup_successful": "खाता बनाया गया",
+    "otp_verified": "OTP सत्यापित हो गया!",
+    "otp_resent": "OTP पुनः भेजा गया",
+    "reset_link_sent": "रीसेट लिंक भेजा गया",
+    "error_occurred": "कुछ गलत हुआ। कृपया पुनः प्रयास करें।",
+    "invalid_phone": "कृपया एक वैध भारतीय मोबाइल नंबर दर्ज करें",
+    "invalid_otp": "अमान्य ओटीपी। कृपया जांचें और पुनः प्रयास करें",
+    "auth_failed": "प्रमाणीकरण विफल। कृपया पुनः प्रयास करें",
+    "network_error": "नेटवर्क त्रुटि। कृपया अपना इंटरनेट कनेक्शन जांचें"
+  },
+  
+  "validation": {
+    "enter_name": "नाम दर्ज करें",
+    "enter_email": "ईमेल दर्ज करें",
+    "enter_phone": "मोबाइल नंबर दर्ज करें",
+    "enter_password": "पासवर्ड दर्ज करें",
+    "invalid_email": "कृपया एक वैध ईमेल पता दर्ज करें",
+    "invalid_phone": "कृपया एक वैध भारतीय मोबाइल नंबर दर्ज करें",
+    "password_too_short": "पासवर्ड कम से कम 6 अक्षर का होना चाहिए",
+    "weak_password": "कृपया एक मजबूत पासवर्ड चुनें",
+    "enter_otp": "कृपया 6 अंकों का OTP दर्ज करें",
+    "agree_terms": "कृपया नियम और शर्तें स्वीकार करें"
+  },
+  
+  "currency": {
+    "rupee": "₹",
+    "per_month": "/महीना",
+    "per_year": "/साल",
+    "free": "मुफ्त"
+  },
+  
+  "time": {
+    "days": "दिन",
+    "weeks": "सप्ताह", 
+    "months": "महीने",
+    "years": "साल"
+  },
+  
+  "common": {
+    "or": "या",
+    "and": "और",
+    "continue": "जारी रखें",
+    "next": "अगला",
+    "back": "वापस",
+    "done": "हो गया",
+    "save": "सेव करें",
+    "edit": "संपादित करें",
+    "delete": "हटाएं",
+    "share": "साझा करें",
+    "copy": "कॉपी करें",
+    "loading": "लोड हो रहा है...",
+    "retry": "पुनः प्रयास करें",
+    "close": "बंद करें",
+    "yes": "हां",
+    "no": "नहीं"
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "app_name": "SubTracker Pro India",
+  "tagline": "Subscription Tracker for Indian Users",
+  
+  "auth": {
+    "welcome": "Welcome",
+    "enter_phone": "Enter your mobile number",
+    "we_will_send_otp": "We will send you an OTP",
+    "send_otp": "Send OTP",
+    "verify_otp": "Verify OTP",
+    "resend_otp": "Resend OTP",
+    "login_with_email": "Login with Email",
+    "continue_as_guest": "Continue as Guest",
+    "continue_with_google": "Continue with Google",
+    "enter_otp": "Enter OTP",
+    "otp_sent_to": "We sent an OTP to {}",
+    "didnt_receive_otp": "Didn't receive OTP?",
+    "change_phone_number": "Change Phone Number",
+    "otp_auto_fill": "OTP will be auto-filled",
+    "login": "Login",
+    "signup": "Sign Up",
+    "create_account": "Create Account",
+    "name": "Name",
+    "email": "Email",
+    "phone_number": "Phone Number",
+    "password": "Password",
+    "forgot_password": "Forgot Password?",
+    "reset_password": "Reset Password",
+    "send": "Send",
+    "cancel": "Cancel",
+    "agree_to_terms": "I agree to the Terms & Conditions and Privacy Policy"
+  },
+  
+  "dashboard": {
+    "dashboard": "Dashboard",
+    "good_morning": "Good Morning",
+    "good_afternoon": "Good Afternoon",
+    "good_evening": "Good Evening",
+    "guest_user": "Guest User",
+    "user": "User",
+    "welcome_message": "Welcome to SubTracker Pro India!",
+    "total_subscriptions": "Total Subscriptions",
+    "monthly_spending": "Monthly Spending",
+    "add_subscription": "Add Subscription",
+    "explore_indian_ott": "Explore Indian OTT",
+    "create_account_secure": "Create an account to save your data securely"
+  },
+  
+  "settings": {
+    "choose_language": "Choose Language",
+    "account_menu": "Account Menu",
+    "profile": "Profile",
+    "settings": "Settings",
+    "sign_out": "Sign Out"
+  },
+  
+  "messages": {
+    "coming_soon": "This feature is coming soon!",
+    "account_created": "Account created successfully!",
+    "login_successful": "Successfully signed in",
+    "signup_successful": "Account created",
+    "otp_verified": "OTP verified successfully!",
+    "otp_resent": "OTP resent successfully",
+    "reset_link_sent": "Reset link sent",
+    "error_occurred": "Something went wrong. Please try again.",
+    "invalid_phone": "Please enter a valid Indian mobile number",
+    "invalid_otp": "Invalid OTP. Please check and try again",
+    "auth_failed": "Authentication failed. Please try again",
+    "network_error": "Network error. Please check your internet connection"
+  },
+  
+  "validation": {
+    "enter_name": "Enter name",
+    "enter_email": "Enter email",
+    "enter_phone": "Enter mobile number",
+    "enter_password": "Enter password",
+    "invalid_email": "Please enter a valid email address",
+    "invalid_phone": "Please enter a valid Indian mobile number",
+    "password_too_short": "Password must be at least 6 characters",
+    "weak_password": "Please choose a stronger password",
+    "enter_otp": "Please enter 6 digit OTP",
+    "agree_terms": "Please accept terms and conditions"
+  },
+  
+  "currency": {
+    "rupee": "₹",
+    "per_month": "/month",
+    "per_year": "/year",
+    "free": "Free"
+  },
+  
+  "time": {
+    "days": "days",
+    "weeks": "weeks",
+    "months": "months",
+    "years": "years"
+  },
+  
+  "common": {
+    "or": "OR",
+    "and": "and",
+    "continue": "Continue",
+    "next": "Next",
+    "back": "Back",
+    "done": "Done",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "share": "Share",
+    "copy": "Copy",
+    "loading": "Loading...",
+    "retry": "Retry",
+    "close": "Close",
+    "yes": "Yes",
+    "no": "No"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "337591270310",
+    "project_id": "printhub-123456",
+    "storage_bucket": "printhub-123456.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:337591270310:android:f15c2bd650097cc0aa2d67",
+        "android_client_info": {
+          "package_name": "com.example.printhub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "337591270310-fro76v61d9m7df9i5odmagh9h08m4keo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOUlZ8oHQTumoVEku0p2q6bJCvclCio84"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "337591270310-fro76v61d9m7df9i5odmagh9h08m4keo.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "337591270310-h5m01oesd19rb0n967am2hrdctc7tl4b.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.printhub"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:337591270310:android:5cec9f5a1242e592aa2d67",
+        "android_client_info": {
+          "package_name": "com.example.subtracker_pro_india"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "337591270310-fro76v61d9m7df9i5odmagh9h08m4keo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOUlZ8oHQTumoVEku0p2q6bJCvclCio84"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "337591270310-fro76v61d9m7df9i5odmagh9h08m4keo.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "337591270310-h5m01oesd19rb0n967am2hrdctc7tl4b.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.printhub"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

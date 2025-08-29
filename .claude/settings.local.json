@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir:*)",
+      "Read(C:\\Users\\techw\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\flutter_local_notifications-16.3.3\\android\\src\\main\\java\\com\\dexterous\\flutterlocalnotifications/**)",
+      "Bash(git init:*)",
+      "Bash(git remote add:*)",
+      "Bash(git add:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
