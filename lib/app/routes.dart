@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import '../features/authentication/screens/login_screen.dart';
 import '../features/dashboard/screens/dashboard_screen.dart';
+import '../features/subscriptions/screens/subscriptions_screen.dart';
+import '../features/subscriptions/screens/add_subscription_screen.dart';
 
 class AppRoutes {
   static final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
@@ -9,6 +11,7 @@ class AppRoutes {
   static const String splash = '/';
   static const String login = '/login';
   static const String dashboard = '/dashboard';
+  static const String subscriptions = '/subscriptions';
   static const String addSubscription = '/add-subscription';
   static const String subscriptionDetails = '/subscription-details';
   static const String profile = '/profile';
@@ -21,6 +24,8 @@ class AppRoutes {
   static Map<String, WidgetBuilder> routes = {
     login: (context) => const LoginScreen(),
     dashboard: (context) => const DashboardScreen(),
+    subscriptions: (context) => const SubscriptionsScreen(),
+    addSubscription: (context) => const AddSubscriptionScreen(),
   };
 
   static Route<dynamic>? onGenerateRoute(RouteSettings settings) {

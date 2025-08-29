@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../../../core/services/analytics_service.dart';
 import '../../../providers/language_provider.dart';
+import '../../../app/routes.dart';
 import '../../authentication/providers/auth_provider.dart';
+import '../../subscriptions/providers/subscription_provider.dart';
 
 class DashboardScreen extends StatefulWidget {
   const DashboardScreen({Key? key}) : super(key: key);
@@ -88,32 +90,42 @@ class _DashboardScreenState extends State<DashboardScreen> {
             const SizedBox(height: 20),
             
             // Quick Stats Cards
-            Row(
-              children: [
-                Expanded(
-                  child: _buildStatCard(
-                    context,
-                    title: languageProvider.currentLanguageCode == 'hi' 
-                        ? 'कुल सब्स्क्रिप्शन'
-                        : 'Total Subscriptions',
-                    value: '0',
-                    icon: Icons.subscriptions,
-                    color: theme.primaryColor,
-                  ),
-                ),
-                const SizedBox(width: 12),
-                Expanded(
-                  child: _buildStatCard(
-                    context,
-                    title: languageProvider.currentLanguageCode == 'hi' 
-                        ? 'मासिक खर्च'
-                        : 'Monthly Spending',
-                    value: '₹0',
-                    icon: Icons.currency_rupee,
-                    color: Colors.green,
-                  ),
-                ),
-              ],
+            Consumer<SubscriptionProvider>(
+              builder: (context, subscriptionProvider, child) {
+                return Row(
+                  children: [
+                    Expanded(
+                      child: _buildStatCard(
+                        context,
+                        title: languageProvider.currentLanguageCode == 'hi' 
+                            ? 'कुल सब्स्क्रिप्शन'
+                            : 'Total Subscriptions',
+                        value: '${subscriptionProvider.activeSubscriptions.length}',
+                        icon: Icons.subscriptions,
+                        color: theme.primaryColor,
+                        onTap: () {
+                          Navigator.pushNamed(context, AppRoutes.subscriptions);
+                        },
+                      ),
+                    ),
+                    const SizedBox(width: 12),
+                    Expanded(
+                      child: _buildStatCard(
+                        context,
+                        title: languageProvider.currentLanguageCode == 'hi' 
+                            ? 'मासिक खर्च'
+                            : 'Monthly Spending',
+                        value: '₹${subscriptionProvider.getTotalMonthlySpending().toStringAsFixed(0)}',
+                        icon: Icons.currency_rupee,
+                        color: Colors.green,
+                        onTap: () {
+                          Navigator.pushNamed(context, AppRoutes.subscriptions);
+                        },
+                      ),
+                    ),
+                  ],
+                );
+              },
             ),
             
             const SizedBox(height: 20),
@@ -121,8 +133,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
             // Action Buttons
             ElevatedButton.icon(
               onPressed: () {
-                // Navigate to add subscription screen
-                _showComingSoon(context);
+                Navigator.pushNamed(context, AppRoutes.addSubscription);
               },
               icon: const Icon(Icons.add),
               label: Text(
@@ -139,14 +150,13 @@ class _DashboardScreenState extends State<DashboardScreen> {
             
             OutlinedButton.icon(
               onPressed: () {
-                // Navigate to explore Indian OTT platforms
-                _showComingSoon(context);
+                Navigator.pushNamed(context, AppRoutes.subscriptions);
               },
-              icon: const Icon(Icons.explore),
+              icon: const Icon(Icons.subscriptions),
               label: Text(
                 languageProvider.currentLanguageCode == 'hi' 
-                    ? 'भारतीय OTT प्लेटफॉर्म'
-                    : 'Explore Indian OTT',
+                    ? 'सभी सब्स्क्रिप्शन देखें'
+                    : 'View All Subscriptions',
               ),
               style: OutlinedButton.styleFrom(
                 padding: const EdgeInsets.symmetric(vertical: 16),
@@ -202,36 +212,41 @@ class _DashboardScreenState extends State<DashboardScreen> {
     required String value,
     required IconData icon,
     required Color color,
+    VoidCallback? onTap,
   }) {
     final theme = Theme.of(context);
     
     return Card(
-      child: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Icon(
-              icon,
-              color: color,
-              size: 28,
-            ),
-            const SizedBox(height: 12),
-            Text(
-              value,
-              style: theme.textTheme.headlineMedium?.copyWith(
-                fontWeight: FontWeight.bold,
+      child: InkWell(
+        onTap: onTap,
+        borderRadius: BorderRadius.circular(12),
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Icon(
+                icon,
                 color: color,
+                size: 28,
               ),
-            ),
-            const SizedBox(height: 4),
-            Text(
-              title,
-              style: theme.textTheme.bodySmall,
-              maxLines: 2,
-              overflow: TextOverflow.ellipsis,
-            ),
-          ],
+              const SizedBox(height: 12),
+              Text(
+                value,
+                style: theme.textTheme.headlineMedium?.copyWith(
+                  fontWeight: FontWeight.bold,
+                  color: color,
+                ),
+              ),
+              const SizedBox(height: 4),
+              Text(
+                title,
+                style: theme.textTheme.bodySmall,
+                maxLines: 2,
+                overflow: TextOverflow.ellipsis,
+              ),
+            ],
+          ),
         ),
       ),
     );

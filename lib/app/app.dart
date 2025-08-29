@@ -10,6 +10,7 @@ import '../core/theme/app_theme.dart';
 import '../features/authentication/providers/auth_provider.dart' as auth;
 import '../features/authentication/screens/login_screen.dart';
 import '../features/dashboard/screens/dashboard_screen.dart';
+import '../features/subscriptions/providers/subscription_provider.dart';
 import '../providers/theme_provider.dart';
 import '../providers/language_provider.dart';
 import 'routes.dart';
@@ -22,6 +23,7 @@ class SubTrackerApp extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (_) => auth.AuthProvider()),
+        ChangeNotifierProvider(create: (_) => SubscriptionProvider()),
         ChangeNotifierProvider(create: (_) => ThemeProvider()),
         ChangeNotifierProvider(create: (_) => LanguageProvider()),
       ],
